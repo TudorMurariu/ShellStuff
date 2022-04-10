@@ -7,7 +7,8 @@ do
                 echo "Fisier :" $i
                 Nrl=$(grep -c "." $i)
                 echo "Numarul de linii este :" $Nrl
-
+                NrC=$(wc -m < $i)
+                echo "Numarul de caractere este :" $NrC
 
         elif [ -d $i ]  # director
         then
